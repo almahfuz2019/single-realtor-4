@@ -8,6 +8,7 @@ export default function Services() {
         {/* Header section */}
         <header className="text-center flex flex-col gap-y-3 md:gap-y-6 mb-12 sm:mb-16 md:mb-20">
           <h1
+            data-aos="fade-up"
             data-aos-delay="200"
             className="text-[#56382D] font-bold text-3xl sm:text-4xl md:text-5xl md:leading-[55px] playfair-display-font"
           >
@@ -15,6 +16,7 @@ export default function Services() {
           </h1>
           <div className="w-[120px] sm:w-[156px] bg-[#56382D] mx-auto h-[2px] md:h-[3px] -mt-3"></div>
           <p
+            data-aos="fade-up"
             data-aos-delay="400"
             className="text-sm sm:text-lg md:text-xl text-[#000000B2] font-normal"
           >
@@ -22,19 +24,21 @@ export default function Services() {
           </p>
         </header>
         <div className="rounded-lg custom-service-shadow max-w-[1320px] mx-auto">
-          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center">
+          {/* Service items */}
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-8">
+            {/* First service item */}
             <Image
               src="https://i.ibb.co/GRGsTBv/Rectangle-176-2.png"
               height="298"
               width="473"
               alt="Call Icon"
-              className=""
+              className="w-full"
             />
             <div className="flex flex-col h-full p-5">
               <h3 className="font-bold text-primary text-xl sm:text-2xl mb-3">
                 Sell Your Property
               </h3>
-              <p className="text-sm font-normal text-justify">
+              <p className="text-sm sm:text-base md:text-lg font-normal text-justify">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis,
                 pariatur dolor. Ipsum, repudiandae adipisci voluptatem vel
                 beatae illo mollitia asperiores magnam nam ducimus laborum
@@ -42,7 +46,7 @@ export default function Services() {
               </p>
               <a
                 href=""
-                className="rounded-xl bg-primary text-white text-center py-[4px] max-w-[140px] mt-4"
+                className="rounded-xl bg-primary text-white text-center py-2 max-w-[140px] mt-4"
               >
                 List Property
               </a>
@@ -52,16 +56,17 @@ export default function Services() {
               height="298"
               width="473"
               alt="Call Icon"
-              className=""
+              className="w-full"
             />
           </div>
 
-          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-8 mt-8">
+            {/* Second service item */}
             <div className="flex flex-col h-full p-5">
               <h3 className="font-bold text-primary text-xl sm:text-2xl mb-3">
                 Sell Your Property
               </h3>
-              <p className="text-sm font-normal text-justify">
+              <p className="text-sm sm:text-base md:text-lg font-normal text-justify">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis,
                 pariatur dolor. Ipsum, repudiandae adipisci voluptatem vel
                 beatae illo mollitia asperiores magnam nam ducimus laborum
@@ -69,7 +74,7 @@ export default function Services() {
               </p>
               <a
                 href=""
-                className="rounded-xl bg-primary text-white text-center py-[4px] max-w-[140px] mt-4"
+                className="rounded-xl bg-primary text-white text-center py-2 max-w-[140px] mt-4"
               >
                 List Property
               </a>
@@ -79,13 +84,13 @@ export default function Services() {
               height="298"
               width="473"
               alt="Call Icon"
-              className=""
+              className="w-full"
             />
             <div className="flex flex-col h-full p-5">
               <h3 className="font-bold text-primary text-xl sm:text-2xl mb-3">
                 Sell Your Property
               </h3>
-              <p className="text-sm font-normal text-justify">
+              <p className="text-sm sm:text-base md:text-lg font-normal text-justify">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis,
                 pariatur dolor. Ipsum, repudiandae adipisci voluptatem vel
                 beatae illo mollitia asperiores magnam nam ducimus laborum
@@ -93,26 +98,27 @@ export default function Services() {
               </p>
               <a
                 href=""
-                className="rounded-xl bg-primary text-white text-center py-[4px] max-w-[140px] mt-4"
+                className="rounded-xl bg-primary text-white text-center py-2 max-w-[140px] mt-4"
               >
                 List Property
               </a>
             </div>
           </div>
 
-          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-8 mt-8">
+            {/* Third service item */}
             <Image
               src="https://i.ibb.co/GRGsTBv/Rectangle-176-2.png"
               height="298"
               width="473"
               alt="Call Icon"
-              className=""
+              className="w-full"
             />
             <div className="flex flex-col h-full p-5">
               <h3 className="font-bold text-primary text-xl sm:text-2xl mb-3">
                 Sell Your Property
               </h3>
-              <p className="text-sm font-normal text-justify">
+              <p className="text-sm sm:text-base md:text-lg font-normal text-justify">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis,
                 pariatur dolor. Ipsum, repudiandae adipisci voluptatem vel
                 beatae illo mollitia asperiores magnam nam ducimus laborum
@@ -120,7 +126,7 @@ export default function Services() {
               </p>
               <a
                 href=""
-                className="rounded-xl bg-primary text-white text-center py-[4px] max-w-[140px] mt-4"
+                className="rounded-xl bg-primary text-white text-center py-2 max-w-[140px] mt-4"
               >
                 List Property
               </a>
@@ -130,16 +136,17 @@ export default function Services() {
               height="298"
               width="473"
               alt="Call Icon"
-              className=""
+              className="w-full"
             />
           </div>
 
-          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-8 mt-8">
+            {/* Fourth service item */}
             <div className="flex flex-col h-full p-5">
               <h3 className="font-bold text-primary text-xl sm:text-2xl mb-3">
                 Sell Your Property
               </h3>
-              <p className="text-sm font-normal text-justify">
+              <p className="text-sm sm:text-base md:text-lg font-normal text-justify">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis,
                 pariatur dolor. Ipsum, repudiandae adipisci voluptatem vel
                 beatae illo mollitia asperiores magnam nam ducimus laborum
@@ -147,7 +154,7 @@ export default function Services() {
               </p>
               <a
                 href=""
-                className="rounded-xl bg-primary text-white text-center py-[4px] max-w-[140px] mt-4"
+                className="rounded-xl bg-primary text-white text-center py-2 max-w-[140px] mt-4"
               >
                 List Property
               </a>
@@ -157,13 +164,13 @@ export default function Services() {
               height="298"
               width="473"
               alt="Call Icon"
-              className=""
+              className="w-full"
             />
             <div className="flex flex-col h-full p-5">
               <h3 className="font-bold text-primary text-xl sm:text-2xl mb-3">
                 Sell Your Property
               </h3>
-              <p className="text-sm font-normal text-justify">
+              <p className="text-sm sm:text-base md:text-lg font-normal text-justify">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis,
                 pariatur dolor. Ipsum, repudiandae adipisci voluptatem vel
                 beatae illo mollitia asperiores magnam nam ducimus laborum
@@ -171,7 +178,7 @@ export default function Services() {
               </p>
               <a
                 href=""
-                className="rounded-xl bg-primary text-white text-center py-[4px] max-w-[140px] mt-4"
+                className="rounded-xl bg-primary text-white text-center py-2 max-w-[140px] mt-4"
               >
                 List Property
               </a>

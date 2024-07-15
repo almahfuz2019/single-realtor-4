@@ -15,6 +15,7 @@ export default function RealEstateTools() {
     <section className="bg-[#E2E6E7] mt-[168px]">
       <div className="max-w-[1320px] overflow-hidden mx-auto py-32 lg:py-[128px] px-4">
         {/* Header section */}
+        {/* Header section */}
         <header className="text-center justify-center flex flex-col gap-y-3 md:gap-y-6 mb-20">
           <h1
             data-aos="fade-up"
@@ -27,7 +28,7 @@ export default function RealEstateTools() {
           <p
             data-aos="fade-up"
             data-aos-delay="400"
-            className="sm:text-xl text-[#000000B2] text-sm font-normal"
+            className="text-sm sm:text-lg md:text-xl text-[#000000B2] font-normal"
           >
             Access Our Suite of Real Estate Tools for Guidance and Instant
             alerts
@@ -49,7 +50,7 @@ export default function RealEstateTools() {
                 </p>
               </div>
               <div className="md:border-l-2 md:border-primary h-full md:pl-8 flex flex-col items-center justify-center">
-                <p className="text-lg mb-4">
+                 <p className="text-sm sm:text-base md:text-lg mb-4">
                   Partner with Us to Sell Your Property: Expert Guidance,
                   Comprehensive Marketing, and Skilled Negotiation to Ensure a
                   Successful and Stress-Free Selling Experience. Maximize Your
@@ -91,7 +92,7 @@ export default function RealEstateTools() {
             </div>
             <div className="flex items-center gap-8 h-full order-2">
               <div className="md:border-r-2 md:border-primary h-full md:pr-8 flex flex-col items-center justify-center">
-                <p className="text-lg mb-4">
+                 <p className="text-sm sm:text-base md:text-lg mb-4">
                   Partner with Us to Sell Your Property: Expert Guidance,
                   Comprehensive Marketing, and Skilled Negotiation to Ensure a
                   Successful and Stress-Free Selling Experience. Maximize Your
@@ -127,7 +128,7 @@ export default function RealEstateTools() {
                 </p>
               </div>
               <div className="md:border-l-2 md:border-primary h-full md:pl-8 flex flex-col items-center justify-center">
-                <p className="text-lg mb-4">
+                 <p className="text-sm sm:text-base md:text-lg mb-4">
                   Partner with Us to Sell Your Property: Expert Guidance,
                   Comprehensive Marketing, and Skilled Negotiation to Ensure a
                   Successful and Stress-Free Selling Experience. Maximize Your

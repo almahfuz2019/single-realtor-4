@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-
 export default function About() {
+
   // Fun facts data
   const data = [
     { id: "1", count: "15", name: "Years Of Experience" },
@@ -18,15 +18,17 @@ export default function About() {
       {/* Header section */}
       <header className="text-center justify-center flex flex-col gap-y-3 md:gap-y-6 mb-20">
         <h1
+          data-aos="fade-up"
           data-aos-delay="200"
-          className="text-[#56382D] font-bold text-4xl  md:text-5xl md:leading-[55px] playfair-display-font"
+          className="text-[#56382D] font-bold text-4xl md:text-5xl md:leading-[55px] playfair-display-font"
         >
           About Mason Mount
         </h1>
         <div className="w-[156px] bg-[#56382D] mx-auto h-[2px] md:h-[3px] -mt-3"></div>
         <p
+          data-aos="fade-up"
           data-aos-delay="400"
-          className="sm:text-xl text-[#000000B2] text-sm font-normal "
+          className="sm:text-xl text-[#000000B2] text-sm font-normal"
         >
           Experienced and Dedicated Realtor: Providing Personalized Guidance to
           Help You Achieve Your Real Estate Goals
@@ -35,16 +37,16 @@ export default function About() {
 
       {/* Main content */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-14 md:gap-y-24 items-start justify-center gap-10">
-        <div>
+        <div data-aos="fade-right">
           <Image
             height="746"
             width="600"
-            className=" bg-cover"
+            className="bg-cover"
             src="https://i.ibb.co/4dhWK8j/Rectangle-3864.png"
-            alt="Owner Image "
+            alt="Owner Image"
           />
         </div>
-        <div>
+        <div data-aos="fade-left">
           <h4 className="font-bold text-3xl text-[#D1513A] mb-4">
             Beyond the transaction, building lasting relationships
           </h4>
@@ -79,12 +81,13 @@ export default function About() {
             <a
               href="#"
               className="sm:w-auto rounded-md lg:rounded-xl bg-primary px-4 md:px-[33px] py-2 md:py-[14px] text-lg md:text-2xl font-medium text-white shadow transition-all duration-300 ease-in-out transform hover:shadow-lg focus:outline-none focus:ring"
+              data-aos="fade-up"
               data-aos-duration="1200"
             >
               Contact Me
             </a>
           </div>
-          <div className="flex justify-center flex-row  items-center gap-6 mt-12">
+          <div className="flex justify-center flex-row items-center gap-6 mt-12">
             <Image
               height="325"
               width="274"
@@ -109,6 +112,7 @@ export default function About() {
           <div
             key={item.id}
             className="text-black text-center"
+            data-aos="fade-up"
             data-aos-duration="1500"
             data-aos-delay={index * 100} // Staggering delay
           >

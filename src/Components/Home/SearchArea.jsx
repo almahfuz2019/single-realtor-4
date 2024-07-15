@@ -1,13 +1,15 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import "aos/dist/aos.css"; // Import AOS styles
 import AOS from "aos"; // Import AOS
 
-AOS.init(); // Initialize AOS
-
 export default function SearchArea() {
+  useEffect(() => {
+    AOS.init(); // Initialize AOS
+  }, []);
+
   return (
     <div className="max-w-[1320px] mx-auto px-4">
       {/* Search Tabs */}
@@ -19,19 +21,19 @@ export default function SearchArea() {
         <Tabs>
           <TabList className="flex flex-wrap justify-center space-x-2 lg:space-x-4 mb-8">
             <Tab
-              className="px-2 lg:px-4 py-2 cursor-pointer text-2xl font-normal"
+              className="px-2 lg:px-4 py-2 cursor-pointer text-lg md:text-2xl font-normal"
               selectedClassName="border-b-2 border-[#56382D] text-[#56382D]"
             >
               Sell
             </Tab>
             <Tab
-              className="px-2 lg:px-4 py-2 cursor-pointer text-2xl font-normal"
+              className="px-2 lg:px-4 py-2 cursor-pointer text-lg md:text-2xl font-normal"
               selectedClassName="border-b-2 border-[#56382D] text-[#56382D]"
             >
               Buy
             </Tab>
             <Tab
-              className="px-2 lg:px-4 py-2 cursor-pointer text-2xl font-normal"
+              className="px-2 lg:px-4 py-2 cursor-pointer text-lg md:text-2xl font-normal"
               selectedClassName="border-b-2 border-[#56382D] text-[#56382D]"
             >
               Rent
@@ -62,7 +64,7 @@ export default function SearchArea() {
               </select>
               <button
                 type="submit"
-                className="w-full lg:w-1/4 p-2 bg-[#D1513A] text-2xl text-white rounded-xl"
+                className="w-full lg:w-1/4 p-2 bg-[#D1513A] text-lg md:text-2xl text-white rounded-xl"
               >
                 Browse
               </button>
@@ -92,7 +94,7 @@ export default function SearchArea() {
               </select>
               <button
                 type="submit"
-                className="w-full lg:w-1/4 p-2 bg-[#C61414CC] md:text-2xl text-lg text-white rounded-xl"
+                className="w-full lg:w-1/4 p-2 bg-[#C61414CC] text-lg md:text-2xl text-white rounded-xl"
               >
                 Browse
               </button>
@@ -122,7 +124,7 @@ export default function SearchArea() {
               </select>
               <button
                 type="submit"
-                className="w-full lg:w-1/4 p-2 bg-[#C61414CC] text-2xl text-white rounded-xl"
+                className="w-full lg:w-1/4 p-2 bg-[#C61414CC] text-lg md:text-2xl text-white rounded-xl"
               >
                 Browse
               </button>

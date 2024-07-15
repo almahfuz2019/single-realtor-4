@@ -14,10 +14,10 @@ export default function Footer() {
     <footer className="bg-[#734635] font-montserrat overflow-hidden">
       <div className="max-w-[1320px] py-[100px] mx-auto px-4">
         {/* Main footer content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-16 text-white">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 text-white">
           {/* Contact Information */}
           <section data-aos="fade-right">
-            <h6 className=" font-semibold sm:text-4xl text-3xl lg:text-4xl font-georgia ">
+            <h6 className="font-semibold sm:text-4xl text-3xl lg:text-4xl font-georgia">
               Robert Pattinson
             </h6>
             <p className="text-xl mt-3 font-weight-400 text-[#FFFFFFCC]">
@@ -31,8 +31,8 @@ export default function Footer() {
             </p>
             <div className="mt-10">
               <Link
-                href=""
-                className="rounded-lg text-[#E2E6E7]  border border-[#E2E6E7] text-2xl font-medium px-[43px] py-[15px]"
+                href="#"
+                className="rounded-lg text-[#E2E6E7] border border-[#E2E6E7] text-2xl font-medium px-[43px] py-[15px]"
               >
                 Drop a message
               </Link>
@@ -44,27 +44,36 @@ export default function Footer() {
             <h6 className="font-semibold sm:text-4xl text-3xl lg:text-4xl font-georgia lg:mb-10 md:mb-7 mb-6">
               Useful Links
             </h6>
-            <a
+            <Link
               href="#"
               className="block text-2xl font-weight-400 text-white mb-2"
             >
               Home
-            </a>
-            <a
+            </Link>
+            <Link
               href="#"
               className="block text-2xl font-weight-400 text-white mb-2"
             >
               About Me
-            </a>
-            <a
+            </Link>
+            <Link
               href="#"
               className="block text-2xl font-weight-400 text-white mb-2"
             >
-              Jobs
-            </a>
-            <a href="#" className="block text-2xl font-weight-400 text-white">
-              Press Kit
-            </a>
+              Services
+            </Link>
+            <Link
+              href="#"
+              className="block text-2xl font-weight-400 text-white mb-2"
+            >
+              Featured Listing
+            </Link>
+            <Link
+              href="#"
+              className="block text-2xl font-weight-400 text-white mb-2"
+            >
+              Contact Us
+            </Link>
           </section>
 
           {/* Additional Links */}
@@ -110,34 +119,34 @@ export default function Footer() {
         <div className="max-w-[1320px] mx-auto px-4 grid-cols-1 grid lg:grid-cols-3 items-center lg:justify-between">
           <ul className="flex gap-x-2 px-1">
             <li>
-              <a href="#" className="text-secondary text-xl">
+              <Link href="#" className="text-secondary text-xl">
                 <Image
                   src="https://i.ibb.co/RcgMwDm/Frame-456.png"
                   height="32"
                   width="32"
                   alt="Facebook"
                 />
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="text-secondary text-xl">
+              <Link href="#" className="text-secondary text-xl">
                 <Image
                   src="https://i.ibb.co/NS9qWnT/Frame-457.png"
                   height="32"
                   width="32"
                   alt="Twitter"
                 />
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="text-secondary text-xl">
+              <Link href="#" className="text-secondary text-xl">
                 <Image
                   src="https://i.ibb.co/zs4RCS5/Frame-458.png"
                   height="32"
                   width="32"
                   alt="Instagram"
                 />
-              </a>
+              </Link>
             </li>
           </ul>
           <div className="lg:text-center text-left mt-6 lg:mt-0">

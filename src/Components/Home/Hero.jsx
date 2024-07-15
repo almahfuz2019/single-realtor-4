@@ -46,7 +46,7 @@ export default function Hero() {
                     height="24"
                     width="24"
                     alt="Call Icon"
-                    className="md:h-auto md:w-auto h-4 w-4 "
+                    className="md:h-auto md:w-auto h-4 w-4"
                   />
                   Book A Call
                 </a>

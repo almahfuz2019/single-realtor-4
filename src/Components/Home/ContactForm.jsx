@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import { useForm } from "react-hook-form";
 
@@ -15,28 +15,30 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="">
-      {/* Header section */}
-
+    <div className="text-center justify-center flex flex-col gap-y-3 md:gap-y-6 mb-20 lg:pr-10">
       {/* Header section */}
       <header className="text-center justify-center flex flex-col gap-y-3 md:gap-y-6 mb-20">
         <h1
+          data-aos="fade-up"
           data-aos-delay="200"
-          className="text-[#56382D] font-bold text-4xl  md:text-5xl md:leading-[55px] playfair-display-font"
+          className="text-[#56382D] font-bold text-4xl md:text-5xl md:leading-[55px] playfair-display-font"
         >
           Contact Me
         </h1>
         <div className="w-[156px] bg-[#56382D] mx-auto h-[2px] md:h-[3px] -mt-3"></div>
         <p
+          data-aos="fade-up"
           data-aos-delay="400"
-          className="sm:text-xl text-[#000000B2] text-sm font-normal "
+          className="sm:text-xl text-[#000000B2] text-sm font-normal"
         >
           Get in Touch: Expert Real Estate Assistance Just a Step Away
         </p>
       </header>
+
+      {/* Form section */}
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
-        <div className="flex items-center gap-4">
-          <div>
+        <div className="flex flex-col md:flex-row gap-4">
+          <div className="flex-1">
             <input
               type="text"
               placeholder="Your Name"
@@ -47,7 +49,7 @@ const ContactForm = () => {
               <p className="text-red-500">{errors.name.message}</p>
             )}
           </div>
-          <div>
+          <div className="flex-1">
             <input
               type="text"
               placeholder="Phone"
@@ -96,4 +98,3 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
-

@@ -432,19 +432,21 @@ export default function Featured() {
 
   return (
     <div className="">
-      <section className="max-w-[1320px] overflow-hidden mx-auto py-32 lg:py-[218px] px-4 ">
+      <section className="max-w-[1320px] overflow-hidden mx-auto py-32 lg:py-[218px] px-4">
         {/* Header section */}
         <header className="text-center justify-center flex flex-col gap-y-3 md:gap-y-6 mb-20">
           <h1
+            data-aos="fade-up"
             data-aos-delay="200"
-            className="text-[#56382D] font-bold text-4xl  md:text-5xl md:leading-[55px] playfair-display-font"
+            className="text-[#56382D] font-bold text-4xl md:text-5xl md:leading-[55px] playfair-display-font"
           >
             Featured Listings
           </h1>
           <div className="w-[156px] bg-[#56382D] mx-auto h-[2px] md:h-[3px] -mt-3"></div>
           <p
+            data-aos="fade-up"
             data-aos-delay="400"
-            className="sm:text-xl text-[#000000B2] text-sm font-normal "
+            className="sm:text-xl text-[#000000B2] text-sm font-normal"
           >
             Handpicked Featured Listings Showcasing the Best Homes and
             Investment Opportunities Available
@@ -453,7 +455,7 @@ export default function Featured() {
         <div className="text-center mb-10"></div>
         <div className="mx-auto mt-20">
           <Tabs selectedIndex={currentTab} onSelect={handleTabChange}>
-            <TabList className="flex lg:space-x-4 text-xl  font-normal text-black mb-6">
+            <TabList className="flex lg:space-x-4 text-xl font-normal text-black mb-6">
               <Tab
                 selectedClassName="bg-primary rounded text-white"
                 className="px-4 py-2 cursor-pointer border-b-2 hover:border-primary border-transparent"
@@ -472,7 +474,6 @@ export default function Featured() {
               >
                 Sell
               </Tab>
-
               <Tab
                 selectedClassName="bg-primary rounded text-white"
                 className="px-4 py-2 cursor-pointer border-b-2 hover:border-primary border-transparent"
@@ -515,12 +516,12 @@ export default function Featured() {
                       height={200}
                       className="w-full h-auto mb-4"
                     />
-                    <div className="p-6 flex flex-col gap-5">
+                    <div className="p-6 flex flex-col 2xl:gap-5 gap-3">
                       <div className="flex justify-between items-center text-base text-black font-normal">
-                        <h3 className="font-medium text-2xl md:text-[32px]">
+                        <h3 className="font-medium text-2xl 2xl:text-[32px]">
                           {card.name}
                         </h3>
-                        <p className="text-red-600 font-medium text-2xl md:text-[32px]">
+                        <p className="text-red-600 font-medium text-2xl 2xl:text-[32px]">
                           {card.price}
                         </p>
                       </div>
@@ -549,12 +550,12 @@ export default function Featured() {
                       height={200}
                       className="w-full h-auto mb-4"
                     />
-                    <div className="p-6 flex flex-col gap-5">
+                    <div className="p-6 flex flex-col 2xl:gap-5 gap-3">
                       <div className="flex justify-between items-center text-base text-black font-normal">
-                        <h3 className="font-medium text-2xl md:text-[32px]">
+                        <h3 className="font-medium text-2xl 2xl:text-[32px]">
                           {card.name}
                         </h3>
-                        <p className="text-red-600 font-medium text-2xl md:text-[32px]">
+                        <p className="text-red-600 font-medium text-2xl 2xl:text-[32px]">
                           {card.price}
                         </p>
                       </div>
@@ -583,12 +584,12 @@ export default function Featured() {
                       height={200}
                       className="w-full h-auto mb-4"
                     />
-                    <div className="p-6 flex flex-col gap-5">
+                    <div className="p-6 flex flex-col 2xl:gap-5 gap-3">
                       <div className="flex justify-between items-center text-base text-black font-normal">
-                        <h3 className="font-medium text-2xl md:text-[32px]">
+                        <h3 className="font-medium text-2xl 2xl:text-[32px]">
                           {card.name}
                         </h3>
-                        <p className="text-red-600 font-medium text-2xl md:text-[32px]">
+                        <p className="text-red-600 font-medium text-2xl 2xl:text-[32px]">
                           {card.price}
                         </p>
                       </div>
@@ -602,7 +603,6 @@ export default function Featured() {
                 ))}
               </div>
             </TabPanel>
-
             <TabPanel>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
                 {getPaginatedData(cardData.forRent).map((card, index) => (
@@ -618,12 +618,12 @@ export default function Featured() {
                       height={200}
                       className="w-full h-auto mb-4"
                     />
-                    <div className="p-6 flex flex-col gap-5">
+                    <div className="p-6 flex flex-col 2xl:gap-5 gap-3">
                       <div className="flex justify-between items-center text-base text-black font-normal">
-                        <h3 className="font-medium text-2xl md:text-[32px]">
+                        <h3 className="font-medium text-2xl 2xl:text-[32px]">
                           {card.name}
                         </h3>
-                        <p className="text-red-600 font-medium text-2xl md:text-[32px]">
+                        <p className="text-red-600 font-medium text-2xl 2xl:text-[32px]">
                           {card.price}
                         </p>
                       </div>
@@ -638,14 +638,14 @@ export default function Featured() {
               </div>
             </TabPanel>
           </Tabs>
-          {/* pagination  */}
+          {/* pagination */}
           <div className="flex flex-col md:flex-row gap-y-5 justify-between items-center mt-10 border border-x-0 pt-4 border-b-0">
             <p className="text-xl">{productCount()} Listings Found</p>
             <div className="flex flex-wrap gap-y-5 text-xl text-black">
               <button
                 onClick={() => handlePageChange(1)}
                 disabled={currentPage === 1}
-                className="mx-1 px-3 py-1 border rounded bg-white  disabled:opacity-50 disabled:cursor-not-allowed"
+                className="mx-1 px-3 py-1 border rounded bg-white disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 First
               </button>
@@ -664,7 +664,7 @@ export default function Featured() {
                     className={`mx-1 px-3 py-1 border rounded ${
                       currentPage === index + 1
                         ? "bg-primary rounded text-white"
-                        : "bg-white "
+                        : "bg-white"
                     }`}
                   >
                     {index + 1}
@@ -674,7 +674,7 @@ export default function Featured() {
               <button
                 onClick={() => handlePageChange(getTotalPages(currentData()))}
                 disabled={currentPage === getTotalPages(currentData())}
-                className="mx-1 px-3 py-1 border rounded bg-white  disabled:opacity-50 disabled:cursor-not-allowed"
+                className="mx-1 px-3 py-1 border rounded bg-white disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 Last
               </button>

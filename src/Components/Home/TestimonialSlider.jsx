@@ -15,9 +15,9 @@ const TestimonialSlider = () => {
   });
 
   return (
-    <div className="">
+    <div className="lg:pl-10 border-l-1 lg:border border-r-0 border-y-0">
       {/* Header section */}
-      <header className="text-center justify-center flex flex-col gap-y-3 md:gap-y-6 mb-20">
+      <header className="text-center justify-center flex flex-col gap-y-3 md:gap-y-6 mb-20  ">
         <h1
           data-aos-delay="200"
           className="text-[#56382D] font-bold text-4xl  md:text-5xl md:leading-[55px] playfair-display-font"
@@ -44,8 +44,12 @@ const TestimonialSlider = () => {
               className="rounded-full"
             />
             <div>
-              <h3 className="md:text-2xl text-xl font-medium">Ben S. & Sandra S.</h3>
-              <p className="md:text-xl text-base font-light mt-2">Happy Clients</p>
+              <h3 className="md:text-2xl text-xl font-medium">
+                Ben S. & Sandra S.
+              </h3>
+              <p className="md:text-xl text-base font-light mt-2">
+                Happy Clients
+              </p>
             </div>
           </div>
           <p className="mb-4 text-xl text-justify border py-5 border-secondary border-x-0">
