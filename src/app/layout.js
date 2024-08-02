@@ -1,9 +1,9 @@
-import { Inter } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/Components/Shared/Navbar";
 import Footer from "@/Components/Shared/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Realtor",
@@ -13,7 +13,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html data-theme="mytheme" lang="en">
-      <body className={inter.className}><Navbar/>{children}<Footer/></body>
+      <body className={montserrat.className}>
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

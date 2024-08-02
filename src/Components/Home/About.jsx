@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-export default function About() {
 
+export default function About() {
   // Fun facts data
   const data = [
     { id: "1", count: "15", name: "Years Of Experience" },
@@ -12,22 +12,23 @@ export default function About() {
 
   return (
     <section
-      id="aboutme"
+      id="about-me"
       className="max-w-[1320px] overflow-hidden mx-auto py-32 lg:py-[218px] px-4"
     >
       {/* Header section */}
       <header className="text-center justify-center flex flex-col gap-y-3 md:gap-y-6 mb-20">
         <h1
           data-aos="fade-up"
-          data-aos-delay="200"
-          className="text-[#56382D] font-bold text-4xl md:text-5xl md:leading-[55px] playfair-display-font"
+          className="text-[#56382D] font-georgia font-bold text-4xl md:text-5xl md:leading-[55px] playfair-display-font"
         >
           About Mason Mount
         </h1>
-        <div className="w-[156px] bg-[#56382D] mx-auto h-[2px] md:h-[3px] -mt-3"></div>
+        <div
+          data-aos="fade-up"
+          className="w-[156px] bg-[#56382D] mx-auto h-[2px] md:h-[3px] -mt-1"
+        ></div>
         <p
           data-aos="fade-up"
-          data-aos-delay="400"
           className="sm:text-xl text-[#000000B2] text-sm font-normal"
         >
           Experienced and Dedicated Realtor: Providing Personalized Guidance to
@@ -36,18 +37,18 @@ export default function About() {
       </header>
 
       {/* Main content */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-14 md:gap-y-24 items-start justify-center gap-10">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-14 md:gap-y-24 items-end justify-center gap-10">
         <div data-aos="fade-right">
           <Image
             height="746"
             width="600"
             className="bg-cover"
-            src="https://i.ibb.co/4dhWK8j/Rectangle-3864.png"
+            src="/Images/About/me.webp"
             alt="Owner Image"
           />
         </div>
         <div data-aos="fade-left">
-          <h4 className="font-bold text-3xl text-[#D1513A] mb-4">
+          <h4 className="font-bold text-3xl text-[#D1513A] mb-4 font-georgia">
             Beyond the transaction, building lasting relationships
           </h4>
           <p className="text-xl text-justify font-normal text-[#000000CC] mb-6">
@@ -68,10 +69,10 @@ export default function About() {
                     height="24"
                     width="24"
                     className=""
-                    src="https://i.ibb.co/RTzGkVQ/checkmark-square-01.png"
+                    src="/Images/About/checkmark.webp"
                     alt="Checkmark"
                   />
-                  <p className="text-lg font-medium">
+                  <p className="text-lg font-medium font-montserrat">
                     Exceptional Market Expertise
                   </p>
                 </div>
@@ -79,27 +80,27 @@ export default function About() {
           </div>
           <div>
             <a
-              href="#"
-              className="sm:w-auto rounded-md lg:rounded-xl bg-primary px-4 md:px-[33px] py-2 md:py-[14px] text-lg md:text-2xl font-medium text-white shadow transition-all duration-300 ease-in-out transform hover:shadow-lg focus:outline-none focus:ring"
+              href="#contact"
+              className="sm:w-auto rounded-md font-montserrat lg:rounded-xl bg-primary px-4 md:px-[33px] py-2 md:py-[14px] text-lg md:text-2xl font-medium text-white shadow  hover:shadow-lg focus:outline-none focus:ring transition duration-300 ease-in-out transform hover:bg-red-600 hover:scale-105"
               data-aos="fade-up"
               data-aos-duration="1200"
             >
               Contact Me
             </a>
           </div>
-          <div className="flex justify-center flex-row items-center gap-6 mt-12">
+          <div className="flex items-center gap-6 mt-12  justify-start">
             <Image
-              height="325"
-              width="274"
-              className="lg:w-auto"
-              src="https://i.ibb.co/VQqwJ36/Rectangle-3866.png"
+              height={325}
+              width={274}
+              className=""
+              src="/Images/About/me_with_another_image1.webp"
               alt="Owner Image"
             />
             <Image
-              height="325"
-              width="274"
-              className="lg:w-auto"
-              src="https://i.ibb.co/PFk1d6N/Rectangle-3867.png"
+              height={325}
+              width={274}
+              className=""
+              src="/Images/About/me_with_another_image2.webp"
               alt="Owner Image"
             />
           </div>
@@ -117,7 +118,7 @@ export default function About() {
             data-aos-delay={index * 100} // Staggering delay
           >
             <h3
-              className="font-semibold text-4xl text-[#56382D] md:text-7xl mb-3"
+              className="font-semibold text-4xl font-montserrat text-[#56382D] md:text-7xl mb-3"
               data-aos-duration="1000"
               data-aos-delay={index * 100 + 200} // Staggering delay for the count
             >

@@ -1,15 +1,10 @@
 "use client";
-import React, { useEffect } from "react";
+import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
-import "aos/dist/aos.css"; // Import AOS styles
-import AOS from "aos"; // Import AOS
+
 
 export default function SearchArea() {
-  useEffect(() => {
-    AOS.init(); // Initialize AOS
-  }, []);
-
   return (
     <div className="max-w-[1320px] mx-auto px-4">
       {/* Search Tabs */}
@@ -19,7 +14,7 @@ export default function SearchArea() {
         data-aos-delay="400"
       >
         <Tabs>
-          <TabList className="flex flex-wrap justify-center space-x-2 lg:space-x-4 mb-8">
+          <TabList className="flex flex-wrap font-georgia font-normal justify-center space-x-2 lg:space-x-4 mb-8">
             <Tab
               className="px-2 lg:px-4 py-2 cursor-pointer text-lg md:text-2xl font-normal"
               selectedClassName="border-b-2 border-[#56382D] text-[#56382D]"
@@ -42,7 +37,7 @@ export default function SearchArea() {
 
           {/* Sell Tab */}
           <TabPanel>
-            <form className="flex flex-wrap lg:flex-nowrap justify-center space-y-4 lg:space-y-0 lg:space-x-4">
+            <form className="flex font-century-gothic flex-wrap lg:flex-nowrap justify-center space-y-4 lg:space-y-0 lg:space-x-4">
               <select className="w-full lg:w-1/4 p-2 border rounded-xl text-base">
                 <option>Property Category</option>
                 <option>Property Category sell</option>
@@ -64,7 +59,7 @@ export default function SearchArea() {
               </select>
               <button
                 type="submit"
-                className="w-full lg:w-1/4 p-2 bg-[#D1513A] text-lg md:text-2xl text-white rounded-xl"
+                className="w-full lg:w-1/4 p-2 bg-[#D1513A] text-lg md:text-2xl text-white rounded-xl font-montserrat transition duration-300 ease-in-out transform hover:bg-red-600  "
               >
                 Browse
               </button>
@@ -73,7 +68,7 @@ export default function SearchArea() {
 
           {/* Buy Tab */}
           <TabPanel>
-            <form className="flex flex-wrap lg:flex-nowrap justify-center space-y-4 lg:space-y-0 lg:space-x-4">
+            <form className="flex flex-wrap lg:flex-nowrap font-century-gothic justify-center space-y-4 lg:space-y-0 lg:space-x-4">
               <select className="w-full lg:w-1/4 p-2 border rounded-xl text-base">
                 <option>Property Category</option>
                 <option>Property Category buy</option>
@@ -94,7 +89,7 @@ export default function SearchArea() {
               </select>
               <button
                 type="submit"
-                className="w-full lg:w-1/4 p-2 bg-[#C61414CC] text-lg md:text-2xl text-white rounded-xl"
+                className="w-full lg:w-1/4 p-2 bg-[#C61414CC] text-lg md:text-2xl text-white rounded-xl font-montserrat transition duration-300 ease-in-out transform hover:bg-red-600"
               >
                 Browse
               </button>
@@ -103,7 +98,7 @@ export default function SearchArea() {
 
           {/* Rent Tab */}
           <TabPanel>
-            <form className="flex flex-wrap lg:flex-nowrap justify-center space-y-4 lg:space-y-0 lg:space-x-4">
+            <form className="flex flex-wrap lg:flex-nowrap font-century-gothic justify-center space-y-4 lg:space-y-0 lg:space-x-4">
               <select className="w-full lg:w-1/4 p-2 border rounded-xl text-base">
                 <option>Property Category</option>
                 <option>Property Category rent</option>
@@ -124,7 +119,7 @@ export default function SearchArea() {
               </select>
               <button
                 type="submit"
-                className="w-full lg:w-1/4 p-2 bg-[#C61414CC] text-lg md:text-2xl text-white rounded-xl"
+                className="w-full lg:w-1/4 p-2 bg-[#C61414CC] text-lg md:text-2xl text-white rounded-xl font-montserrat transition duration-300 ease-in-out transform hover:bg-red-600"
               >
                 Browse
               </button>
