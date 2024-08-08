@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Link from "next/link";
 
 export default function NotFound() {
@@ -10,7 +11,7 @@ export default function NotFound() {
           Uh-oh!
         </p>
 
-        <p className="mt-4 text-gray-500">We can&apos;t find that page.</p>
+        <p className="mt-4 text-gray-500">We can't find that page.</p>
 
         <Link
           href="/"
